@@ -7,7 +7,7 @@ jobs:
         strategy:
           fail-fast: true
           matrix:
-            php: [7.4, 7.3, 7.2, 7.1]
+            php: [7.4]
             dependency-version: [prefer-lowest, prefer-stable]
 
         name: P${{ matrix.php }} - ${{ matrix.dependency-version }}
@@ -61,4 +61,3 @@ jobs:
               run: ./vendor/bin/codecept run unit
               env:
                   APP_ENV: testing
-                  DB_PASSWORD: root
