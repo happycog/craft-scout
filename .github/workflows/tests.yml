@@ -61,3 +61,4 @@ jobs:
               run: ./vendor/bin/codecept run unit
               env:
                   APP_ENV: testing
+                  DB_PASSWORD: root
