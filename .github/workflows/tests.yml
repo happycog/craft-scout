@@ -58,7 +58,7 @@ jobs:
                   composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
 
             - name: Run tests
-              run: ./vendor/bin/codecept run unit
+              run: ./vendor/bin/codecept run unit ConsoleIndexTest
               env:
                   APP_ENV: testing
                   DB_PASSWORD: root
