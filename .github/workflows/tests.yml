@@ -8,7 +8,7 @@ jobs:
           fail-fast: true
           matrix:
             php: [7.4, 7.3, 7.2, 7.1]
-            dependency-version: [prefer-stable, prefer-lowest]
+            dependency-version: [prefer-stable]
 
         name: P${{ matrix.php }} - ${{ matrix.dependency-version }}
         runs-on: ubuntu-latest
