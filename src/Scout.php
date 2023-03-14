@@ -133,11 +133,11 @@ class Scout extends Plugin
 
     private function validateConfig(): void
     {
-        $indices = $this->getSettings()->getIndices();
-
-        if ($indices->unique('indexName')->count() !== $indices->count()) {
-            throw new Exception('Index names must be unique in the Scout config.');
-        }
+        // $indices = $this->getSettings()->getIndices();
+        //
+        // if ($indices->unique('indexName')->count() !== $indices->count()) {
+        //     throw new Exception('Index names must be unique in the Scout config.');
+        // }
     }
 
     private function registerEventHandlers(): void
