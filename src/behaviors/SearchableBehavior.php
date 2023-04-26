@@ -131,7 +131,7 @@ class SearchableBehavior extends Behavior
 
     public function getRelatedElements(): Collection
     {
-        if (!Scout::$plugin->getSettings()->sync) {
+        if (true || !Scout::$plugin->getSettings()->sync) {
             return new Collection();
         }
 
